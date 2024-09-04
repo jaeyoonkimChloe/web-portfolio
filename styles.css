@@ -1,0 +1,507 @@
+@charset "UTF-8";
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: white;
+  cursor: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  background-color: black;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 300;
+  transition: width 0.3s ease, height 0.3s ease, mix-blend-mode 0.3s ease;
+  mix-blend-mode: difference;
+  background: white;
+}
+
+.hover-area {
+  position: relative;
+}
+
+ul,
+li,
+input,
+button,
+select {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  mix-blend-mode: difference;
+  color: white;
+  font-size: 20px;
+  justify-content: space-between;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  right: 30px;
+  text-transform: uppercase;
+  font-weight: 450;
+  z-index: 100;
+}
+.header .hover-area {
+  display: flex;
+  padding-left: 10px;
+}
+.header .header_menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.main .main_title {
+  padding-top: 170px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 4.5vw;
+  line-height: 4.9vw;
+  font-weight: 550;
+  text-align: left;
+  font-family: Poppins;
+}
+.main .main_title .t_span {
+  width: 13%;
+  display: inline-block;
+}
+.main .pr_desc {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 170px;
+  padding-bottom: 0px;
+  text-transform: uppercase;
+}
+.main .pr_desc .desc_left .desc_left_span {
+  font-size: 16px;
+  font-weight: 500;
+}
+.main .pr_desc .desc_right {
+  display: flex;
+  gap: 10%;
+  width: 30%;
+  justify-content: flex-end;
+}
+.main .pr_desc2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 170px;
+  padding-bottom: 0px;
+}
+.main .pr_desc2 .desc2_right {
+  display: flex;
+  gap: 10%;
+  width: 30%;
+  justify-content: flex-end;
+}
+.main .pr_item1,
+.main .pr_item4 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 18px;
+  box-sizing: border-box;
+}
+.main .pr_item23,
+.main .pr_item56 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 100px;
+  padding-top: 40px;
+  box-sizing: border-box;
+  gap: 30px;
+}
+.main .pr_item2,
+.main .pr_item3,
+.main .pr_item5,
+.main .pr_item6 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 1;
+}
+.main .pr_img2,
+.main .pr_img3,
+.main .pr_img1,
+.main .pr_img4,
+.main .pr_img5,
+.main .pr_img6 {
+  background-size: cover;
+  background-position: center;
+  height: 50vw;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main .pr_img1 {
+  background: url(./img/pr_img_1.jpg) center/cover no-repeat;
+}
+.main .pr_img2 {
+  background: url(./img/pr_img_2-2.jpg) center/cover no-repeat;
+}
+.main .pr_img3 {
+  background: url(./img/pr_img_3.jpg) center/cover no-repeat;
+}
+.main .pr_img4 {
+  background: url(./img/pr_img_1.jpg) center/cover no-repeat;
+}
+.main .pr_img5 {
+  background: url(./img/pr_img_3.jpg) center/cover no-repeat;
+}
+.main .pr_img6 {
+  background: url(./img/pr_img_2.jpg) center/cover no-repeat;
+}
+.main .blurred-image {
+  filter: blur(10px);
+}
+.main .pr_img3,
+.main .pr_img5 {
+  border-radius: 50%;
+}
+.main .pr_info1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 4px;
+  box-sizing: border-box;
+}
+.main .pr_info2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 4px;
+  box-sizing: border-box;
+}
+.main .pr_info1-1,
+.main .pr_info2-1 {
+  color: black;
+  font-size: 20px;
+  font-weight: 450;
+}
+.main .pr_info1-2,
+.main .pr_info2-2 {
+  color: black;
+  font-size: 20px;
+  font-weight: 250;
+}
+
+.containter_footer {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 390px;
+  padding-top: 170px;
+  padding-bottom: 100px;
+}
+.containter_footer .cont_left_text {
+  font-size: 20px;
+  color: #333333;
+  line-height: 30px;
+  font-weight: 300;
+}
+.containter_footer .cont_right {
+  font-size: 20px;
+  line-height: 22px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 20px;
+  padding: right 55px;
+}
+.containter_footer .right_text1-1 {
+  font-weight: 200;
+}
+.containter_footer .right_text_1-2 {
+  font-weight: 400;
+}
+
+/* 여기서부터 Project 페이지 */
+.container1 {
+  height: 640px;
+  background-color: #ccc;
+  background: url(./img/pr_img_1.jpg) center 30%/cover no-repeat;
+}
+
+.prj_img1 {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  margin: 0;
+  box-sizing: border-box;
+  transition: transform 0.8s ease-in-out, filter 0.8s ease-in-out;
+}
+
+.container3 {
+  height: 640px;
+  background-color: #ccc;
+  margin-top: 80px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 100px;
+  box-sizing: border-box;
+  width: 600px;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 80px;
+}
+
+.container4 {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  height: 640px;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.prj_img3,
+.prj_img4 {
+  width: 50%;
+  height: 100%;
+  background-color: #ccc;
+  background-size: cover;
+  background-position: center;
+}
+
+.container5 {
+  display: flex;
+  height: 640px;
+  width: 90%;
+  background-color: #ccc;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+}
+
+.container6 {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px;
+  gap: 100px;
+}
+
+.prj_img6,
+.prj_img7,
+.prj_img8 {
+  width: calc((100% - 20px) / 3);
+  height: 700px;
+  background-color: #ccc;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 60px;
+  background-color: transparent;
+  color: #000;
+}
+.footer-navigation .content_text {
+  font-size: 42;
+}
+.footer-navigation .p {
+  font-size: 20;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.footer-button {
+  padding: 4px 20px;
+  text-decoration: none;
+  color: #000;
+  background-color: transparent;
+  font-weight: bold;
+  display: block;
+}
+
+.project-name {
+  font-size: 1em;
+  color: #666;
+  font-weight: normal;
+}
+
+.footer-button:hover {
+  color: #555;
+}
+
+/* 여기서부터 Protected 페이지 */
+.protected-content {
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 42px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.password-container {
+  display: flex;
+  border: 1px solid #ccc;
+  /* 초기 보더 색상 */
+  overflow: hidden;
+  /* 버튼과 인풋 테두리 연결을 위함 */
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  white-space: nowrap;
+  margin-bottom: 10px;
+  /* h1 태그의 하단 마진 조정 */
+}
+
+p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  color: #333333;
+}
+
+input[type=password] {
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  flex: 1 0 50%;
+  height: 50px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  text-align: center;
+  flex: 0 1 20%;
+}
+
+/* 동적으로 적용될 보더 스타일 */
+#password-container.valid {
+  border-color: blue;
+  /* 유효한 경우 */
+}
+
+#password-container.invalid {
+  border-color: red;
+  /* 유효하지 않은 경우 */
+}
+
+.menu-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* 여기서부터 Info 페이지 */
+.info-page {
+  background-color: #1D1D1D;
+  /* 인포 페이지의 배경색 */
+}
+
+.main_info .main_title_info {
+  padding-top: 170px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 2.5vw;
+  line-height: 3.2vw;
+  font-weight: 550;
+  text-align: left;
+  font-family: Poppins;
+  color: #CBCBCB;
+}
+.main_info .t_span_info {
+  color: #35D299;
+}
+.main_info .main_contents_info {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-top: 60px;
+  padding-bottom: 0px;
+  color: #CBCBCB;
+  width: 100%; /* 너비를 100%로 설정 */
+}
+.main_info .main_contents_info .cont_left_text_info,
+.main_info .main_contents_info .cont_center_text_info,
+.main_info .main_contents_info .cont_right_text_info {
+  color: #333333;
+  font-weight: 300; /* 폰트 굵기 설정 */
+  width: 100%; /* 요소의 너비를 100%로 설정하여 플렉스 아이템이 부모의 너비를 가득 채우도록 설정 */
+}
+.main_info .main_contents_info .cont_left_info,
+.main_info .main_contents_info .cont_center_info,
+.main_info .main_contents_info .cont_right_info {
+  font-size: 16px;
+  display: flex; /* 요소들을 플렉스 박스로 설정 */
+  flex-wrap: wrap; /* 요소들이 컨테이너의 너비를 넘을 경우 줄 바꿈 설정 */
+  flex-direction: column; /* 요소들을 세로 방향으로 정렬 */
+  box-sizing: border-box; /* 패딩과 보더를 전체 너비와 높이에 포함 */
+  width: 100%; /* 요소의 너비를 100%로 설정하여 플렉스 아이템이 부모의 너비를 가득 채우도록 설정 */
+}/*# sourceMappingURL=styles.css.map */

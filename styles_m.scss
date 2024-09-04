@@ -1,0 +1,150 @@
+@media screen and (max-width: 700px) {
+  .menu-icon {
+    display: block; // 모바일 화면에서 아이콘을 표시
+    position: fixed; // 화면에 고정
+    top: 5px; // 화면 위에서 5px 내려오기
+  }
+
+  .header_menu {
+    display: none; // 메뉴를 표시하려면 이 부분을 조정
+    color: transparent;
+    padding-right: 30px;
+  }
+
+  .main {
+    .main_title {
+      padding-top: 140px;
+      padding-left: 30px;
+      font-size: 5.8vw;
+      line-height: 6.5vw;
+      text-align: left;
+
+      .t_span {
+        width: 15%;
+        display: inline-block;
+      }
+    }
+
+    .main_title br {
+      display: none;
+    }
+
+    .pr_desc {
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 130px;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+
+      .desc_left {
+        display: flex;
+        align-items: center;
+      }
+
+      .desc_left .desc_left_span {
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .desc_right {
+        display: flex;
+        gap: 14px;
+        width: 50%;
+        justify-content: flex-end;
+        align-items: center;
+      }
+    }
+
+    .pr_item1,
+    .pr_item4 {
+      display: flex;
+      width: 100%;
+      height: auto;
+      flex-wrap: wrap;
+      padding-top: 12px;
+      flex-direction: column;
+      box-sizing: border-box;
+    }
+
+    .pr_item23,
+    .pr_item56 {
+      flex: 25%;
+      width: 100%;
+      flex-wrap: wrap;
+      flex-direction: column;
+      box-sizing: border-box;
+    }
+
+    .pr_item2,
+    .pr_item3,
+    .pr_item5,
+    .pr_item6 {
+      flex: initial;
+      width: 100%;
+    }
+
+    .pr_img1,
+    .pr_img2,
+    .pr_img3,
+    .pr_img4,
+    .pr_img5,
+    .pr_img6 {
+      background-size: cover;
+      background-position: center;
+      height: calc(100vw - 15px);
+      width: calc(100vw - 15px); //vw의 100%, 즉 전체 뷰포트에서에서 가로 15px을 뺸 값
+      position: relative;
+      margin: 0; //가로, 세로 15Px 뺀 콘텐츠를 중앙에 위치시킬 때 사용, 15Px을 좌우 여백에 균등한 너비를 가짐
+      box-sizing: border-box;
+    }
+
+
+    .pr_info1, 
+    .pr_info2 { //인포 세로
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      padding: 4px;
+      padding-bottom: 30px;
+      padding-top: 10px;
+      box-sizing: border-box;
+    }
+  
+    .pr_info1-1,
+    .pr_info2-1 {
+      color: black;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 450;
+    }
+  
+    .pr_info1-2,
+    .pr_info2-2 {
+      color: black;
+      font-size: 18px;
+      font-weight: 250;
+    }
+
+  }
+
+  .containter_footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    font-size: 18px;
+
+    .cont_left,
+    .cont_right {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 20px;
+      flex-direction: column;
+      box-sizing: border-box;
+    }
+  }
+}
